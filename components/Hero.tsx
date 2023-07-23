@@ -1,13 +1,15 @@
+"use client"
 import React from 'react'
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from './BackgroundCircles';
 import Link from 'next/link';
- 
-type Props = {}
 
-function Hero({}: Props) {
+ 
+  export  function Hero() {
     const [text, count] = useTypewriter({
-        words: ["Hi, The Name's Pravakar Adhikari" ,"Developer", "Designer", "student"],
+        words: [
+         " Hi, The Name's Pravakar Adhikari "  ,"Developer", "Designer", "student"
+        ],
         loop: true,
         delaySpeed: 2000,
     });
@@ -23,7 +25,7 @@ function Hero({}: Props) {
             <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>Student</h2>
            <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
             <span className='mr-3'>{text}</span>
-              <Cursor cursorColor='#F7AB0A'/>
+              <Cursor cursorColor='#14e9fd'/>
             </h1>
 
             <div className='pt-5'>

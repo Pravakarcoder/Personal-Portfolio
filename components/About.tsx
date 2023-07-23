@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { motion } from 'framer-motion'
 type Props = {}
@@ -5,7 +6,7 @@ type Props = {}
 function About({}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0}}
+      initial={{ opacity: 1}}
       whileHover={{ opacity: 1}}
       transition={{ duration: 1.5}}
       className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>

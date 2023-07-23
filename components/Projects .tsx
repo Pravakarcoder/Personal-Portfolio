@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import {motion} from 'framer-motion';
  
@@ -15,7 +16,7 @@ function Projects ({}: Props) {
          Projects
         </h3>
 
-        <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
+        <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/40 scrollbar-thumb-[#F7AB0A]/80'>
           {projects.map((project, i) => (
             <div key={i} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
                <motion.img
@@ -27,7 +28,7 @@ function Projects ({}: Props) {
                 whileInView={{ opacity: 1, y: 0}}
                 viewport={{ once: true }}
                 src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP0pTHA8VVWihO6CtPWTTNgPBlQGsQJtySkafuSi1Jd1Pap6t6cwkeQXc_jLIZe2a5VWc&usqp=CAU' 
-                alt='' 
+                alt='projectImg' 
                 />
 
                 <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
@@ -42,7 +43,8 @@ function Projects ({}: Props) {
           ))}
         </div>
 
-        <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12' />
+        <div className='w-full absolute top-[30%] bg-[#14e9fd]/10 left-0 h-[500px] -skew-y-12' />
+        {/* <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12' /> */}
      </motion.div>
   )
 }

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { motion } from 'framer-motion'
 type Props = {}
@@ -37,9 +38,8 @@ function ExperienceCard({}: Props) {
             <ul className='list-disc space-y-4 ml-5 text-lg'>
                 <li>Summary point Summary pointSummary point Summary pointSummary pointSummary pointSummary pointSummary point</li>
                 <li>Summary point Summary point Summary pointSummary point Summary pointSummary pointSummary pointSummary pointSummary point</li>
-                <li>Summary point Summary point Summary pointSummary point Summary pointSummary pointSummary pointSummary pointSummary point</li>
-                <li>Summary point Summary point Summary pointSummary point Summary pointSummary pointSummary pointSummary pointSummary point</li>
-                <li>Summary pointSummary point Summary pointSummary point Summary pointSummary pointSummary pointSummary pointSummary point</li>
+                 
+                
             </ul>
         </div>
     </article>
