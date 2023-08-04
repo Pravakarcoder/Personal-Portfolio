@@ -1,7 +1,10 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion'
+import { PageInfo } from '../typtings'
+import { urlFor } from '../sanity'
 type Props = {}
+
 
 function About({}: Props) {
   return (
